@@ -16,3 +16,12 @@ def rest(minutes, times):
         webbrowser.open("https://www.youtube.com/watch?v=gavT_q9CLME")
         count = count + 1
 
+def init():
+    """ Takes input from the user and invokes
+    the rest function using the given input """
+    minutes = input("Enter the number of minutes between your brakes: ")
+    times = input("Enter the number of times you "
+                  "want the break to be repeated: ")
+    rest(float(minutes), float(times))
+
+init()
